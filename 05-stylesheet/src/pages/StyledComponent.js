@@ -52,7 +52,7 @@ const MyBox = styled.div`
     color: ${(props) => props.color || 'black'};
 
     &:hover {
-        transfrom: scale(1.05, 1.05) rotate(-10deg);
+        transform: scale(1.05, 1.05) rotate(-10deg);
         background-color: ${(props) => props.color || '#eeeeee'};
         color: #fff;
     }

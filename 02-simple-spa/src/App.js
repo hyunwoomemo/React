@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 
 import DepartmentGet from './pages/departmentGet';
+import DepartmentPath from './pages/DepartmentPath';
 
 const App = () => {
   return (
@@ -31,6 +32,9 @@ const App = () => {
 
           {/* GET 파라미터 사용 */}
           <Route path="/department_get" element={<DepartmentGet/>} />
+
+          {/* Path 파라미터는 URL 형식에 변수의 위치와 이름을 정해줘야 한다. */}
+          <Route path='department_path/:id/:msg' element={<DepartmentPath />} />
         </Routes>
     </div>
   );
